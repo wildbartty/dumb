@@ -1,5 +1,5 @@
 
-function run () 
+function run ()
 start  = os.clock()
 
 for count = 0,math.floor(2^32) do
@@ -11,5 +11,6 @@ end
 fin = os.clock()
 
 print("The time taken was " .. fin - start)
-   
 end
+
+run()

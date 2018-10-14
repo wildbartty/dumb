@@ -3,8 +3,8 @@
 
 int main () {
   clock_t start = clock(), diff;
-  long limit = 1l << 32;
-  for (unsigned long i = 0; i < limit; i++) {
+  
+  for (unsigned long i = 0; i < 1l << 32; i++) {
     if (i % 1000000 == 0) {
       printf("%lu\n", i);
     }

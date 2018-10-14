@@ -7,11 +7,11 @@
 
     call SYSTEM_CLOCK(start_time, rate)
 
-    do i=0,2**32
-       if (MOD(i, 1000000) == 0) then
+    DO CONCURRENT i=0,2**32
+       if (MOD(i, 1000000_I8) == 0) then
           write (*,*) i
        end if
-    end do
+    end DO
 
     call SYSTEM_CLOCK(end_time)
 
